@@ -1,0 +1,6 @@
+framework module MDAlert {
+  umbrella header "MDAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

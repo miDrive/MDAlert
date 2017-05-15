@@ -1,0 +1,22 @@
+{
+  "name": "MDAlert",
+  "version": "0.1.0",
+  "summary": "A short description of MDAlert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Chris Byatt/MDAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Chris Byatt": "byatt.chris@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Chris Byatt/MDAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MDAlert/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MDAlert (0.1.0)
+
+DEPENDENCIES:
+  - MDAlert (from `../`)
+
+EXTERNAL SOURCES:
+  MDAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MDAlert: d254754e88cc9a7796bdd8ccf287d2c380ffbb35
+
+PODFILE CHECKSUM: 2fac3f85d519bff7df6018d56ade51464eaf3593
+
+COCOAPODS: 1.2.1
