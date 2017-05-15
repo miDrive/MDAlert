@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MDAlert_Example' do
+  pod 'MDAlert', :path => '../'
+
+  target 'MDAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
