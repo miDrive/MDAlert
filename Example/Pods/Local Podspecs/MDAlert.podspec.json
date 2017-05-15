@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "MDAlert/Classes/**/*"
+  "source_files": "MDAlert/Classes/**/*",
+  "resource_bundles": {
+    "MDAlert": [
+      "MDAlert/Assets/*.*"
+    ]
+  }
 }

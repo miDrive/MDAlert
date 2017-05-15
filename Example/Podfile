@@ -6,7 +6,5 @@ target 'MDAlert_Example' do
 
   target 'MDAlert_Tests' do
     inherit! :search_paths
-
-    
   end
 end
