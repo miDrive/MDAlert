@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import MDAlert
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBAction func showAlert(_ sender: UIButton) {
+        let alert = MDAlertController(title: "Wow", message: "It's an alert!", showsCancel: true)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        alert.addAction(MDAlertAction(title: "OK", style: .default, action: nil))
+        alert.addAction(MDAlertAction(title: "OK", style: .destructive, action: nil))
+        alert.addAction(MDAlertAction(title: "OK", style: .cancel, action: nil))
 
+        alert.show()
+    }
 }
 

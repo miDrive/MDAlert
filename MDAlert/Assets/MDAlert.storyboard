@@ -44,7 +44,7 @@
                                                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-75-a8q">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="315" height="200"/>
                                                                                     <constraints>
-                                                                                        <constraint firstAttribute="height" constant="200" id="QN3-jB-PXO"/>
+                                                                                        <constraint firstAttribute="height" priority="999" constant="200" id="QN3-jB-PXO"/>
                                                                                     </constraints>
                                                                                 </imageView>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybj-Cn-9lK">
@@ -84,7 +84,7 @@
                                                                         <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M6s-gI-E81">
                                                                             <rect key="frame" x="0.0" y="509" width="315" height="60"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" placeholder="YES" id="Bsr-tF-idA"/>
+                                                                                <constraint firstAttribute="height" priority="999" constant="60" placeholder="YES" id="Bsr-tF-idA"/>
                                                                             </constraints>
                                                                         </stackView>
                                                                     </subviews>
