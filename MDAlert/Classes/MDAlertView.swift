@@ -30,6 +30,7 @@ class MDAlertView: UIViewController {
     @IBOutlet var spacerView: UIView!
     @IBOutlet private var bodyView: UIView!
     @IBOutlet var buttonView: UIStackView!
+    @IBOutlet var buttonSpacerView: UIView!
 
     @IBOutlet var cancelButton: UIButton!
 
@@ -56,6 +57,7 @@ class MDAlertView: UIViewController {
         }
 
         for action in actions {
+            buttonSpacerView.isHidden = true
             buttonView.isHidden = false
             buttonView.addArrangedSubview(action.button)
         }

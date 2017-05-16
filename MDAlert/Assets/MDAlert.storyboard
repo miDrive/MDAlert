@@ -11,7 +11,7 @@
         <!--Alert View-->
         <scene sceneID="9Xl-8K-hXr">
             <objects>
-                <viewController storyboardIdentifier="MDAlert" id="Yol-SF-hlj" customClass="MDAlertView" customModule="miDriveAlert" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MDAlert" id="Yol-SF-hlj" customClass="MDAlertView" customModule="MDAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zCN-NB-py6"/>
                         <viewControllerLayoutGuide type="bottom" id="mw2-dY-TmN"/>
@@ -55,7 +55,7 @@
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="It9-dD-GAL">
-                                                                                    <rect key="frame" x="20" y="290" width="275" height="169"/>
+                                                                                    <rect key="frame" x="20" y="290" width="275" height="109"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAU-Pc-9qA">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="275" height="31.5"/>
@@ -64,13 +64,20 @@
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUL-FO-gnZ">
-                                                                                            <rect key="frame" x="0.0" y="51.5" width="275" height="117.5"/>
+                                                                                            <rect key="frame" x="0.0" y="51.5" width="275" height="57.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                     </subviews>
                                                                                 </stackView>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-89-xh9">
+                                                                                    <rect key="frame" x="0.0" y="429" width="315" height="30"/>
+                                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="30" id="Du7-tm-Hzo"/>
+                                                                                    </constraints>
+                                                                                </view>
                                                                             </subviews>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="trailing" secondItem="Ybj-Cn-9lK" secondAttribute="trailing" id="0E5-Zb-WDD"/>
@@ -150,6 +157,7 @@
                         <outlet property="alertView" destination="aNi-H6-Xk6" id="Q9C-8k-cki"/>
                         <outlet property="bodyLabel" destination="JUL-FO-gnZ" id="2Ev-eL-Q8W"/>
                         <outlet property="bodyView" destination="shk-n3-lKo" id="gb3-Iu-ZLf"/>
+                        <outlet property="buttonSpacerView" destination="t7d-89-xh9" id="PQs-Hp-xtD"/>
                         <outlet property="buttonView" destination="M6s-gI-E81" id="lzH-El-IKl"/>
                         <outlet property="cancelButton" destination="E7b-Rl-heY" id="Owu-RR-B22"/>
                         <outlet property="imageView" destination="7uh-75-a8q" id="dks-xy-6bo"/>
