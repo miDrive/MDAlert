@@ -55,7 +55,7 @@
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="It9-dD-GAL">
-                                                                                    <rect key="frame" x="20" y="290" width="275" height="109"/>
+                                                                                    <rect key="frame" x="20" y="290" width="275" height="89"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAU-Pc-9qA">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="275" height="31.5"/>
@@ -64,7 +64,7 @@
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUL-FO-gnZ">
-                                                                                            <rect key="frame" x="0.0" y="51.5" width="275" height="57.5"/>
+                                                                                            <rect key="frame" x="0.0" y="51.5" width="275" height="37.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -72,10 +72,10 @@
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-89-xh9">
-                                                                                    <rect key="frame" x="0.0" y="429" width="315" height="30"/>
+                                                                                    <rect key="frame" x="0.0" y="409" width="315" height="50"/>
                                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <constraints>
-                                                                                        <constraint firstAttribute="height" constant="30" id="Du7-tm-Hzo"/>
+                                                                                        <constraint firstAttribute="height" constant="50" id="Du7-tm-Hzo"/>
                                                                                     </constraints>
                                                                                 </view>
                                                                             </subviews>
