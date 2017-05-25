@@ -60,14 +60,13 @@ class MDAlertView: UIViewController {
 
         if let customView = customView {
             customViewHolder.isHidden = false
+            customView.translatesAutoresizingMaskIntoConstraints = false
 
             customViewHolder.addSubview(customView)
             customViewHolder.addConstraint(customView.topAnchor.constraint(equalTo: customViewHolder.topAnchor))
             customViewHolder.addConstraint(customView.leftAnchor.constraint(equalTo: customViewHolder.leftAnchor))
             customViewHolder.addConstraint(customView.bottomAnchor.constraint(equalTo: customViewHolder.bottomAnchor))
             customViewHolder.addConstraint(customView.rightAnchor.constraint(equalTo: customViewHolder.rightAnchor))
-
-            customViewHolder.sizeToFit()
 
             if bodyMessage == nil {
                 bodyLabel.isHidden = true
