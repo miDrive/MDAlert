@@ -24,14 +24,18 @@ open class MDAlertAction: NSObject {
 
     private var style: MDAlertActionStyle = .default
     
-    convenience public init(title: String, style: MDAlertActionStyle, action: ((MDAlertAction) -> Void)?) {
+    convenience public init(title: String, style: MDAlertActionStyle, button: UIButton? = nil, action: ((MDAlertAction) -> Void)?) {
         self.init()
         
         self.style = style
         self.action = action
-        
-        self.button = UIButton()
-        button.setTitle(title, for: UIControlState())
+
+        if let button = button {
+            self.button = button
+        } else {
+            self.button = UIButton()
+            self.button.setTitle(title, for: UIControlState())
+        }
     }
 
     func setStyles() {
