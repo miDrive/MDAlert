@@ -33,7 +33,7 @@ open class MDAlertController: NSObject {
 
     open var actionTitleFont: UIFont = MDAlertViewDefaults.actionTitleFont
     
-    public init(title: String, message: String, customView: UIView? = nil, showsCancel: Bool = true) {
+    public init(title: String, message: String? = nil, customView: UIView? = nil, showsCancel: Bool = true) {
         super.init()
         
         let podBundle = Bundle(for: self.classForCoder)
@@ -50,7 +50,7 @@ open class MDAlertController: NSObject {
         }
     }
 
-    public init(image: UIImage, title: String, message: String, customView: UIView? = nil, showsCancel: Bool = true) {
+    public init(image: UIImage, title: String, message: String? = nil, customView: UIView? = nil, showsCancel: Bool = true) {
         super.init()
 
         let podBundle = Bundle(for: self.classForCoder)
