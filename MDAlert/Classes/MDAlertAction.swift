@@ -30,12 +30,15 @@ open class MDAlertAction: NSObject {
         self.style = style
         self.action = action
 
-        if let button = button {
-            self.button = button
-        } else {
-            self.button = UIButton()
-            self.button.setTitle(title, for: UIControlState())
-        }
+        self.button = UIButton()
+        self.button.setTitle(title, for: UIControlState())
+    }
+
+    convenience public init(button: UIButton, action: ((MDAlertAction) -> Void)?) {
+        self.init()
+
+        self.action = action
+        self.button = button
     }
 
     func setStyles() {
