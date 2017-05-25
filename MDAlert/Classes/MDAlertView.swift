@@ -67,7 +67,7 @@ class MDAlertView: UIViewController {
             customViewHolder.addConstraint(customView.bottomAnchor.constraint(equalTo: customViewHolder.bottomAnchor))
             customViewHolder.addConstraint(customView.rightAnchor.constraint(equalTo: customViewHolder.rightAnchor))
 
-            customView.sizeToFit()
+            customViewHolder.sizeToFit()
 
             if bodyMessage == nil {
                 bodyLabel.isHidden = true
