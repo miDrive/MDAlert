@@ -16,6 +16,7 @@ class MDAlertView: UIViewController {
 
     var titleMessage: String!
     var bodyMessage: String!
+    var customView: UIView?
 
     var showsCancel: Bool!
 
@@ -25,6 +26,7 @@ class MDAlertView: UIViewController {
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var bodyLabel: UILabel!
+    @IBOutlet var customViewHolder: UIView!
     
     @IBOutlet var alertView: UIView!
     @IBOutlet var spacerView: UIView!
@@ -54,6 +56,21 @@ class MDAlertView: UIViewController {
             imageView.isHidden = false
             imageView.image = image
             spacerView.isHidden = true
+        }
+
+        if let customView = customView {
+            customViewHolder.isHidden = false
+            customView.translatesAutoresizingMaskIntoConstraints = false
+
+            customViewHolder.addSubview(customView)
+            customViewHolder.addConstraint(customView.topAnchor.constraint(equalTo: customViewHolder.topAnchor))
+            customViewHolder.addConstraint(customView.leftAnchor.constraint(equalTo: customViewHolder.leftAnchor))
+            customViewHolder.addConstraint(customView.bottomAnchor.constraint(equalTo: customViewHolder.bottomAnchor))
+            customViewHolder.addConstraint(customView.rightAnchor.constraint(equalTo: customViewHolder.rightAnchor))
+
+            if bodyMessage == nil {
+                bodyLabel.isHidden = true
+            }
         }
 
         for action in actions {
