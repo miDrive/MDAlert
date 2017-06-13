@@ -110,9 +110,9 @@ open class MDAlertController: NSObject {
     }
     
     fileprivate func insertAlert() {
-        self.alertViewController.alertView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        self.alertViewController.alertView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         self.alertViewController.alertView.center = self.alertViewController.view.center
-        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.2, delay: 0.0, animations: {
             self.alertViewController.view.alpha = 1.0
             self.alertViewController.alertView.alpha = 1.0
             self.alertViewController.alertView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
