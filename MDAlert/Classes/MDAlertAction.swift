@@ -22,6 +22,8 @@ open class MDAlertAction: NSObject {
         }
     }
 
+    var customButton: Bool = false
+
     private var style: MDAlertActionStyle = .default
     
     convenience public init(title: String, style: MDAlertActionStyle, button: UIButton? = nil, action: ((MDAlertAction) -> Void)?) {
@@ -39,9 +41,11 @@ open class MDAlertAction: NSObject {
 
         self.action = action
         self.button = button
+        customButton = true
     }
 
     func setStyles() {
+        if !customButton {
         switch style {
         case .cancel:
             button.backgroundColor = controller.actionCancelBackgroundColour
@@ -52,6 +56,7 @@ open class MDAlertAction: NSObject {
         default:
             button.backgroundColor = controller.actionDefaultBackgroundColour
             button.setTitleColor(controller.actionDefaultTitleColour, for: UIControlState())
+        }
         }
 
         button.titleLabel!.font = controller.actionTitleFont
