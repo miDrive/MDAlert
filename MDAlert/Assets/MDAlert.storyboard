@@ -189,6 +189,10 @@
                         <outlet property="titleLabel" destination="hAU-Pc-9qA" id="Uy9-2e-IFA"/>
                         <outletCollection property="viewInsets" destination="VGM-kB-8Bt" collectionClass="NSMutableArray" id="cmG-re-V0T"/>
                         <outletCollection property="viewInsets" destination="teO-pN-6pS" collectionClass="NSMutableArray" id="zbN-CZ-mzQ"/>
+                        <outletCollection property="viewInsets" destination="BKk-yt-xOy" collectionClass="NSMutableArray" id="Fpp-Tb-WA9"/>
+                        <outletCollection property="viewInsets" destination="uL6-2n-fRi" collectionClass="NSMutableArray" id="H7i-qr-gWi"/>
+                        <outletCollection property="viewInsets" destination="gmg-rf-m6o" collectionClass="NSMutableArray" id="qft-aD-tIW"/>
+                        <outletCollection property="viewInsets" destination="nDD-mu-B4w" collectionClass="NSMutableArray" id="zhN-2k-6XT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pph-wl-QET" userLabel="First Responder" sceneMemberID="firstResponder"/>
