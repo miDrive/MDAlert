@@ -22,6 +22,16 @@ class MDAlertView: UIViewController {
 
     var actions = [MDAlertAction]()
 
+    @IBOutlet var viewInsets: [NSLayoutConstraint]! {
+        didSet {
+            if UIScreen.main.bounds.size.width <= 320 {
+                viewInsets.forEach { constraint in
+                    constraint.constant = 10
+                }
+            }
+        }
+    }
+
     @IBOutlet var imageView: UIImageView!
 
     @IBOutlet private var titleLabel: UILabel!
@@ -31,6 +41,7 @@ class MDAlertView: UIViewController {
     @IBOutlet var alertView: UIView!
     @IBOutlet var spacerView: UIView!
     @IBOutlet private var bodyView: UIView!
+    @IBOutlet var bodyStackView: UIStackView!
     @IBOutlet var buttonView: UIStackView!
     @IBOutlet var buttonSpacerView: UIView!
 
@@ -55,6 +66,11 @@ class MDAlertView: UIViewController {
         if let image = image {
             imageView.isHidden = false
             imageView.image = image
+
+            if (imageView.bounds.size.width > image.size.width && imageView.bounds.size.height > image.size.height) {
+                imageView.contentMode = .scaleAspectFit;
+            }
+            
             spacerView.isHidden = true
         }
 
@@ -77,6 +93,10 @@ class MDAlertView: UIViewController {
             buttonSpacerView.isHidden = true
             buttonView.isHidden = false
             buttonView.addArrangedSubview(action.button)
+        }
+
+        if actions.count > 1 {
+            bodyStackView.spacing = 0.0
         }
     }
 

@@ -45,23 +45,18 @@ open class MDAlertAction: NSObject {
     }
 
     func setStyles() {
-
-        switch style {
-        case .cancel:
-            if !customButton {
+        if !customButton {
+            switch style {
+            case .cancel:
                 button.backgroundColor = controller.actionCancelBackgroundColour
-            }
-            button.setTitleColor(controller.actionCancelTitleColour, for: UIControlState())
-        case .destructive:
-            if !customButton {
+                button.setTitleColor(controller.actionCancelTitleColour, for: UIControlState())
+            case .destructive:
                 button.backgroundColor = controller.actionDestructiveBackgroundColour
-            }
-            button.setTitleColor(controller.actionDestructiveTitleColour, for: UIControlState())
-        default:
-            if !customButton {
+                button.setTitleColor(controller.actionDestructiveTitleColour, for: UIControlState())
+            default:
                 button.backgroundColor = controller.actionDefaultBackgroundColour
+                button.setTitleColor(controller.actionDefaultTitleColour, for: UIControlState())
             }
-            button.setTitleColor(controller.actionDefaultTitleColour, for: UIControlState())
         }
 
         button.titleLabel!.font = controller.actionTitleFont
