@@ -67,7 +67,7 @@ class MDAlertView: UIViewController {
             imageView.isHidden = false
             imageView.image = image
 
-            if (imageView.bounds.size.width > image.size.width && imageView.bounds.size.height > image.size.height) {
+            if (imageView.bounds.size.width < image.size.width && imageView.bounds.size.height < image.size.height) {
                 imageView.contentMode = .scaleAspectFit;
             }
             
