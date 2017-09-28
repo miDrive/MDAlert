@@ -122,7 +122,7 @@ class MDAlertView: UIViewController {
 
 extension Collection {
     /// Returns the element at the specified index iff it is within bounds, otherwise nil.
-    public subscript(safe index: Index) -> _Element? {
+    public subscript(safe index: Index) -> Element? {
         return index >= startIndex && index < endIndex ? self[index] : nil
     }
 }

@@ -42,8 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		013DB9DC87FBBE1E8E3620C06BF35FA2 /* Pods-MDAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MDAlert_Example.modulemap"; sourceTree = "<group>"; };
-		0324EBAA0BABBA9512F6696367CC45EC /* Pods-MDAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MDAlert_Tests.modulemap"; sourceTree = "<group>"; };
+		013DB9DC87FBBE1E8E3620C06BF35FA2 /* Pods-MDAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MDAlert_Example.modulemap"; sourceTree = "<group>"; };
+		0324EBAA0BABBA9512F6696367CC45EC /* Pods-MDAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MDAlert_Tests.modulemap"; sourceTree = "<group>"; };
 		22E132D2B2261FCC184E2705AEAFC135 /* Pods-MDAlert_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MDAlert_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		26F706EA75F8EA3BE1399D1DCD98EDF4 /* Pods-MDAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDAlert_Tests-dummy.m"; sourceTree = "<group>"; };
 		2CB43791C1881A600601ACCF66DAA5BD /* MDAlertViewDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MDAlertViewDefaults.swift; sourceTree = "<group>"; };
@@ -54,19 +54,19 @@
 		52B30377F739CC577E7A234584C382B7 /* Pods-MDAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MDAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		54DCABF2E4AD8F03760776EF7859AC33 /* MDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MDAlertView.swift; sourceTree = "<group>"; };
 		54E7325EE9B0DB9FFE9C8BC5FC8B8521 /* Pods-MDAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MDAlert_Example-umbrella.h"; sourceTree = "<group>"; };
-		5F0D7B43A95B05BE8657898F5913CA82 /* MDAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MDAlert.modulemap; sourceTree = "<group>"; };
+		5F0D7B43A95B05BE8657898F5913CA82 /* MDAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MDAlert.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6D7DF07AD6B6D1396D536D4C26805815 /* Pods-MDAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73814C2185B1788EEDFD8FA53BDBDE44 /* Pods-MDAlert_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MDAlert_Tests-umbrella.h"; sourceTree = "<group>"; };
 		764C9927D70B24E46F63117C3CE28294 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A3459E2398FFCCEDE22D796FE9A6C3C /* Pods_MDAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MDAlert_Example.framework; path = "Pods-MDAlert_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A3459E2398FFCCEDE22D796FE9A6C3C /* Pods_MDAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813763F86B7965491494CC3D4B8FC9E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8296B739F39BC77D669F7D871CEDA9FC /* Pods-MDAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MDAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		82B843AE2391D37DD7868FFF623E86DA /* Pods-MDAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDAlert_Example-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97132255E53E08F98025F513EF821032 /* Pods_MDAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MDAlert_Tests.framework; path = "Pods-MDAlert_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0A9D827A5C2E624B68074E5D9816B8E /* MDAlert.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MDAlert.bundle; path = MDAlert.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6BA039538387A1327A3E2B135A3ED53 /* MDAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDAlert.framework; path = MDAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97132255E53E08F98025F513EF821032 /* Pods_MDAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A9D827A5C2E624B68074E5D9816B8E /* MDAlert.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDAlert.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA039538387A1327A3E2B135A3ED53 /* MDAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83EF507BBF08190448C101527E9BA6C /* Pods-MDAlert_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MDAlert_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B8C1F45B0C2C15F8D2A442A3E612B39C /* MDAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MDAlertController.swift; sourceTree = "<group>"; };
 		BE3C9FC47A29CD83FD7F3F43D9FD13B2 /* Pods-MDAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,6 @@
 			children = (
 				FF4345F710C28BB7BE6F499077E00575 /* Classes */,
 			);
-			name = MDAlert;
 			path = MDAlert;
 			sourceTree = "<group>";
 		};
@@ -179,7 +178,6 @@
 			children = (
 				F8124EACA6E8604EAC6B465F83E74CF6 /* MDAlert.storyboard */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -247,7 +245,6 @@
 			children = (
 				9F41BEB61EE8E039FCE5AA5569DC757A /* Assets */,
 			);
-			name = MDAlert;
 			path = MDAlert;
 			sourceTree = "<group>";
 		};
@@ -259,7 +256,6 @@
 				54DCABF2E4AD8F03760776EF7859AC33 /* MDAlertView.swift */,
 				2CB43791C1881A600601ACCF66DAA5BD /* MDAlertViewDefaults.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -390,6 +386,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0002E62C79AD323A150952FAD2DF7F75 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -512,7 +513,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -744,7 +746,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
