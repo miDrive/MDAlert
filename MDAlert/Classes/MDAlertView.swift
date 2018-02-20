@@ -109,7 +109,7 @@ class MDAlertView: UIViewController {
         bodyLabel.font = controller.bodyFont
         bodyLabel.textColor = controller.bodyColour
 
-        cancelButton.titleLabel!.font = controller.actionTitleFont
+        cancelButton.titleLabel!.font = controller.bodyFont
 
         buttonView.addConstraint(NSLayoutConstraint(item: self.buttonView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: (CGFloat(actions.count) * controller.actionHeight)))
     }
