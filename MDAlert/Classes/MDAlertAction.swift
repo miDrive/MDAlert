@@ -24,7 +24,7 @@ open class MDAlertAction: NSObject {
 
     var customButton: Bool = false
 
-    var dismissAlert: Bool = true
+    open var dismissAlert: Bool = true
 
     private var style: MDAlertActionStyle = .default
     
