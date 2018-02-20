@@ -33,6 +33,7 @@ class MDAlertView: UIViewController {
     }
 
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageViewHeightConstraint: NSLayoutConstraint!
 
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var bodyLabel: UILabel!
@@ -67,9 +68,7 @@ class MDAlertView: UIViewController {
             imageView.isHidden = false
             imageView.image = image
 
-            if (imageView.bounds.size.width < image.size.width && imageView.bounds.size.height < image.size.height) {
-                imageView.contentMode = .scaleAspectFit;
-            }
+            imageViewHeightConstraint.constant = image.size.height + 60
             
             spacerView.isHidden = true
         }
@@ -83,10 +82,10 @@ class MDAlertView: UIViewController {
             customViewHolder.addConstraint(customView.leftAnchor.constraint(equalTo: customViewHolder.leftAnchor))
             customViewHolder.addConstraint(customView.bottomAnchor.constraint(equalTo: customViewHolder.bottomAnchor))
             customViewHolder.addConstraint(customView.rightAnchor.constraint(equalTo: customViewHolder.rightAnchor))
+        }
 
-            if bodyMessage == nil {
-                bodyLabel.isHidden = true
-            }
+        if bodyMessage == nil {
+            bodyLabel.isHidden = true
         }
 
         for action in actions {
