@@ -89,7 +89,9 @@ class MDAlertView: UIViewController {
         }
 
         for action in actions {
-            buttonSpacerView.isHidden = true
+            if customView == nil {
+                buttonSpacerView.isHidden = true
+            }
             buttonView.isHidden = false
             buttonView.addArrangedSubview(action.button)
         }
