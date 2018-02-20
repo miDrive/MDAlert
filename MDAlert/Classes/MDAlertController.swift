@@ -102,9 +102,13 @@ open class MDAlertController: NSObject {
         if let buttonIndex = self.alertViewController.buttonView.subviews.index(of: button) {
             let action = self.alertViewController.actions[buttonIndex]
             if let pressedAction = action.action {
-                self.dismiss({ 
+                if action.dismissAlert {
+                    self.dismiss({
+                        pressedAction(action)
+                    })
+                } else {
                     pressedAction(action)
-                })
+                }
             } else {
                 self.dismiss(nil)
             }
