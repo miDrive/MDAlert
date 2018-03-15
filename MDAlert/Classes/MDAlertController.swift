@@ -139,10 +139,10 @@ open class MDAlertController: NSObject {
         if let info = notification.userInfo {
             let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
 
-            alertViewController.viewMidConstraint.constant = -keyboardFrame.size.height
+            alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
 
             if #available(iOS 11.0, *) {
-                alertViewController.viewMidConstraint.constant = -keyboardFrame.size.height
+                alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
             }
 
             UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
