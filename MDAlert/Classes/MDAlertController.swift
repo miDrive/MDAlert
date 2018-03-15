@@ -47,6 +47,9 @@ open class MDAlertController: NSObject {
             self.alertViewController.bodyMessage = message
             alertViewController.customView = customView
             alertViewController.showsCancel = showsCancel
+
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
         }
     }
 
@@ -66,7 +69,14 @@ open class MDAlertController: NSObject {
             alertViewController.bodyMessage = message
             alertViewController.customView = customView
             alertViewController.showsCancel = showsCancel
+
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
         }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     open func addAction(_ action: MDAlertAction) {
@@ -123,6 +133,29 @@ open class MDAlertController: NSObject {
             self.alertViewController.alertView.alpha = 1.0
             self.alertViewController.alertView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             }, completion: nil)
+    }
+
+    func keyboardWillShow(_ notification: Notification) {
+        if let info = notification.userInfo {
+            let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+
+            alertViewController.viewMidConstraint.constant = keyboardFrame.size.height
+
+            if #available(iOS 11.0, *) {
+                alertViewController.viewMidConstraint.constant = keyboardFrame.size.height
+            }
+
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
+//                self.alertViewController.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
+
+    func keyboardWillHide(_ notification: Notification) {
+        alertViewController.viewMidConstraint.constant = 0
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
+//            self.alertViewController.layoutIfNeeded()
+        }, completion: nil)
     }
 }
 

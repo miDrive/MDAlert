@@ -185,6 +185,7 @@
                         <outlet property="imageViewHeightConstraint" destination="QN3-jB-PXO" id="YUh-rH-bs1"/>
                         <outlet property="spacerView" destination="Ybj-Cn-9lK" id="Alc-kg-rhC"/>
                         <outlet property="titleLabel" destination="hAU-Pc-9qA" id="Uy9-2e-IFA"/>
+                        <outlet property="viewMidConstraint" destination="teO-pN-6pS" id="YIv-ox-oil"/>
                         <outletCollection property="viewInsets" destination="VGM-kB-8Bt" collectionClass="NSMutableArray" id="cmG-re-V0T"/>
                         <outletCollection property="viewInsets" destination="teO-pN-6pS" collectionClass="NSMutableArray" id="zbN-CZ-mzQ"/>
                         <outletCollection property="viewInsets" destination="8UG-bo-YFI" collectionClass="NSMutableArray" id="u24-6B-hDD"/>
