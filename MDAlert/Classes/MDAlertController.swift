@@ -139,22 +139,19 @@ open class MDAlertController: NSObject {
         if let info = notification.userInfo {
             let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
 
-            alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
-
-            if #available(iOS 11.0, *) {
-                alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
-            }
-
             UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
-//                self.alertViewController.layoutIfNeeded()
+                if #available(iOS 11.0, *) {
+                    self.alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
+                } else {
+                    self.alertViewController.viewMidConstraint.constant = -(keyboardFrame.size.height / 2)
+                }
             }, completion: nil)
         }
     }
 
     @objc func keyboardWillHide(_ notification: Notification) {
-        alertViewController.viewMidConstraint.constant = 0
         UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
-//            self.alertViewController.layoutIfNeeded()
+            self.alertViewController.viewMidConstraint.constant = 0
         }, completion: nil)
     }
 }
