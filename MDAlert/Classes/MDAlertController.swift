@@ -135,7 +135,7 @@ open class MDAlertController: NSObject {
             }, completion: nil)
     }
 
-    func keyboardWillShow(_ notification: Notification) {
+    @objc func keyboardWillShow(_ notification: Notification) {
         if let info = notification.userInfo {
             let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
 
@@ -151,7 +151,7 @@ open class MDAlertController: NSObject {
         }
     }
 
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         alertViewController.viewMidConstraint.constant = 0
         UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
 //            self.alertViewController.layoutIfNeeded()
