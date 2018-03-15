@@ -31,7 +31,7 @@ class MDAlertView: UIViewController {
             }
         }
     }
-    @IBOutlet var viewMidConstraint: NSLayoutConstraint!
+    @IBOutlet var viewMidConstraint: NSLayoutConstraint?
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var imageViewHeightConstraint: NSLayoutConstraint!
