@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,16 +28,16 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNi-H6-Xk6">
-                                            <rect key="frame" x="30" y="264" width="315" height="140"/>
+                                            <rect key="frame" x="30" y="254" width="315" height="160"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shk-n3-lKo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="120"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x0G-zc-jPX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="120"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eKH-It-Mip">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="100"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="120"/>
                                                                     <subviews>
                                                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-75-a8q">
                                                                             <rect key="frame" x="0.0" y="0.0" width="315" height="0.0"/>
@@ -87,7 +87,7 @@
                                                                                 <constraint firstAttribute="trailing" secondItem="JUL-FO-gnZ" secondAttribute="trailing" constant="20" id="uL6-2n-fRi"/>
                                                                             </constraints>
                                                                         </stackView>
-                                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-89-xh9">
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-89-xh9">
                                                                             <rect key="frame" x="132.5" y="100" width="50" height="20"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <constraints>
@@ -105,7 +105,7 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M6s-gI-E81">
-                                                                    <rect key="frame" x="0.0" y="-264" width="315" height="0.0"/>
+                                                                    <rect key="frame" x="0.0" y="-254" width="315" height="0.0"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" priority="999" constant="60" placeholder="YES" id="Bsr-tF-idA"/>
                                                                     </constraints>
@@ -128,7 +128,7 @@
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7b-Rl-heY">
-                                                    <rect key="frame" x="0.0" y="120" width="315" height="20"/>
+                                                    <rect key="frame" x="0.0" y="140" width="315" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="7m5-fj-6tV"/>
                                                     </constraints>
