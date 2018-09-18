@@ -48,8 +48,8 @@ open class MDAlertController: NSObject {
             alertViewController.customView = customView
             alertViewController.showsCancel = showsCancel
 
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
         }
     }
 
@@ -70,8 +70,8 @@ open class MDAlertController: NSObject {
             alertViewController.customView = customView
             alertViewController.showsCancel = showsCancel
 
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
         }
     }
 
@@ -137,9 +137,9 @@ open class MDAlertController: NSObject {
 
     @objc func keyboardWillShow(_ notification: Notification) {
         if let info = notification.userInfo {
-            let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
 
-            UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: UIView.AnimationOptions(), animations: {
                 if #available(iOS 11.0, *) {
                     self.alertViewController.viewMidConstraint?.constant = -(keyboardFrame.size.height / 2)
                 } else {
@@ -150,7 +150,7 @@ open class MDAlertController: NSObject {
     }
 
     @objc func keyboardWillHide(_ notification: Notification) {
-        UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: UIView.AnimationOptions(), animations: {
             self.alertViewController.viewMidConstraint?.constant = 0
         }, completion: nil)
     }

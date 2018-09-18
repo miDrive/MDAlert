@@ -35,7 +35,7 @@ open class MDAlertAction: NSObject {
         self.action = action
 
         self.button = UIButton()
-        self.button.setTitle(title, for: UIControlState())
+        self.button.setTitle(title, for: UIControl.State())
     }
 
     convenience public init(button: UIButton, action: ((MDAlertAction) -> Void)?) {
@@ -51,13 +51,13 @@ open class MDAlertAction: NSObject {
             switch style {
             case .cancel:
                 button.backgroundColor = controller.actionCancelBackgroundColour
-                button.setTitleColor(controller.actionCancelTitleColour, for: UIControlState())
+                button.setTitleColor(controller.actionCancelTitleColour, for: UIControl.State())
             case .destructive:
                 button.backgroundColor = controller.actionDestructiveBackgroundColour
-                button.setTitleColor(controller.actionDestructiveTitleColour, for: UIControlState())
+                button.setTitleColor(controller.actionDestructiveTitleColour, for: UIControl.State())
             default:
                 button.backgroundColor = controller.actionDefaultBackgroundColour
-                button.setTitleColor(controller.actionDefaultTitleColour, for: UIControlState())
+                button.setTitleColor(controller.actionDefaultTitleColour, for: UIControl.State())
             }
         }
 
