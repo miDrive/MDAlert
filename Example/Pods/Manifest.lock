@@ -1,5 +1,5 @@
 PODS:
-  - MDAlert (0.2.1)
+  - MDAlert (0.2.2)
 
 DEPENDENCIES:
   - MDAlert (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MDAlert: dd8b755bffc89e490765fee4feee43fb476e91d6
+  MDAlert: 54b86d90050d24cf3fe2befc270d81f2c3c996b5
 
 PODFILE CHECKSUM: 5e43a612e3dcbf9025cffad296581df34e465be4
 

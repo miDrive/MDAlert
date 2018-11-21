@@ -35,7 +35,7 @@ class MDAlertViewDefaults {
     static let actionDefaultBackgroundColour: UIColor = UIColor(red: 4/255, green: 123/255, blue: 205/255, alpha: 1.0)
 
     // Default background colour of cancel action
-    static let actionCancelBackgroundColour: UIColor = UIColor(red: 195/255, green: 204/255, blue: 211/255, alpha: 1.0)
+    static let actionCancelBackgroundColour: UIColor = UIColor(red: 135/255, green: 154/255, blue: 168/255, alpha: 1.0)
 
     // Default background colour of destructive action
     static let actionDestructiveBackgroundColour: UIColor = UIColor(red: 235/255, green: 0/255, blue: 0/255, alpha: 1.0)

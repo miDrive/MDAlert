@@ -14,18 +14,18 @@ class ViewController: UIViewController {
     @IBAction func showAlert(_ sender: UIButton) {
         
         // Alert with buttons
-//        let alert = MDAlertController(title: "Wow", message: "It's an alert!", showsCancel: true)
-//
-//        alert.addAction(MDAlertAction(title: "OK", style: .default, action: nil))
-//        alert.addAction(MDAlertAction(title: "OK", style: .destructive, action: nil))
-//        alert.addAction(MDAlertAction(title: "OK", style: .cancel, action: nil))
-//
-//        alert.show()
+        let alert = MDAlertController(title: "Wow", message: "It's an alert!", showsCancel: true)
 
-        // Alert no buttons
-        let alert = MDAlertController(title: "Password reset Password reset Password reset Password reset Password reset Password reset Password reset Password reset ", message: "Your request has been recieved, please check your email for instructions on resetting your password.")
+        alert.addAction(MDAlertAction(title: "OK", style: .default, action: nil))
+        alert.addAction(MDAlertAction(title: "OK", style: .destructive, action: nil))
+        alert.addAction(MDAlertAction(title: "OK", style: .cancel, action: nil))
 
         alert.show()
+
+        // Alert no buttons
+//        let alert = MDAlertController(title: "Password reset Password reset Password reset Password reset Password reset Password reset Password reset Password reset ", message: "Your request has been recieved, please check your email for instructions on resetting your password.")
+//
+//        alert.show()
 
         // Alert custom view no buttons
 //        let view = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 130))

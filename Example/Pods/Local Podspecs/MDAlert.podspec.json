@@ -1,6 +1,6 @@
 {
   "name": "MDAlert",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "A short description of MDAlert.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Chris Byatt/MDAlert",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Chris Byatt/MDAlert.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "9.0"
