@@ -94,6 +94,7 @@ class MDAlertView: UIViewController {
                 buttonSpacerView.isHidden = true
             }
             buttonView.isHidden = false
+            buttonSpacerView.isHidden = false
             buttonView.addArrangedSubview(action.button)
         }
 
@@ -114,7 +115,7 @@ class MDAlertView: UIViewController {
 
         cancelButton.titleLabel!.font = controller.bodyFont
 
-        buttonView.addConstraint(NSLayoutConstraint(item: self.buttonView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: (CGFloat(actions.count) * controller.actionHeight)))
+        buttonView.addConstraint(NSLayoutConstraint(item: self.buttonView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: (CGFloat(actions.count) * controller.actionHeight) + CGFloat((actions.count - 1) * 1)))
     }
 
     @IBAction func pressedCancel(_ sender: UIButton) {
